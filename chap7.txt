@@ -26,8 +26,7 @@ nmap -sT -O -T0
 nmap -A --host-timeout 99 -T1
 Correct Answer: 3
 
-Q5. Alice is scanning a target network. She initiates a TCP connection by sending an SYN packet to a target machine and receives a SYN/ACK packet in response. Instead of completing the three-way 
-handshake with an ACK packet, she sends an RST packet. What type of scan is Alice likely performing, and what is her goal? * 
+Q5. Alice is scanning a target network. She initiates a TCP connection by sending an SYN packet to a target machine and receives a SYN/ACK packet in response. Instead of completing the three-way handshake with an ACK packet, she sends an RST packet. What type of scan is Alice likely performing, and what is her goal? * 
 They are performing an SYN scan to stealthily identify open ports without fully establishing a connection.
 They are performing a network scan to identify live hosts and their IP addresses.
 They are performing a TCP connect scan to identify open ports on the target machine.

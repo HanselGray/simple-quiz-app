@@ -43,8 +43,7 @@ mp3stego
 openstego
 Correct Answer: 3,4
 
-Q7. In task 4, when using 3 bits in the TTL field of the IP header to hide data, how many 
-different TTL values can the decoding server receive? * 
+Q7. In task 4, when using 3 bits in the TTL field of the IP header to hide data, how many different TTL values can the decoding server receive? * 
 2
 4
 8
