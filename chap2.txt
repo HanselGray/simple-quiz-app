@@ -13,8 +13,7 @@ Secure the evidence; prepare the system for acquisition; Connect the target medi
 Correct Answer: 2
 
 3. You are assigned to work in the computer forensics lab of a state police agency. While working on a high-profile criminal case, you have followed every applicable procedure, however your boss is still concerned that the defense attorney might question whether evidence has been changed while at the lab. What can you do to prove that the evidence is the same as it was when it first entered the lab? * 
-Make an MD5 hash of the evidence and compare it with the original MD5 hash that was taken when
-the evidence first entered the lab
+Make an MD5 hash of the evidence and compare it with the original MD5 hash that was taken when the evidence first entered the lab
 Make an MD5 hash of the evidence and compare it to the standard database developed by NIST
 There is no reason to worry about this possible claim because state labs are certified
 Sign a statement attesting that the evidence is the same as it was when it entered the lab
