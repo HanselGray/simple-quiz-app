@@ -134,7 +134,7 @@ Remove the plug from the power router or modem
 Document the actions and changes that you observe in the monitor, computer, printer, or in other peripherals
 Correct Answer: 2
 
-20. Which of the following tools allows analysis of Windows Event Logs? (Choose all that apply) * 
+Q20. Which of the following tools allows analysis of Windows Event Logs? (Choose all that apply) * 
 Wireshark
 Hayabusa
 APT-Hunter
