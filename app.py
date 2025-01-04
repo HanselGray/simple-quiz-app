@@ -22,7 +22,7 @@ def load_questions(file_path):
         data = f.readlines()
         for line in data:
             
-            if re.match(r'^\d+\.',line):
+            if re.match(r'^Q\d+\.',line):
                 question['question']=line.split('.',1)[1]
                 continue
 
