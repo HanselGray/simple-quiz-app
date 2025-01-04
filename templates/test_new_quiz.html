@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .question {
+            margin-bottom: 30px;
+        }
+
+        .question > h3 {
+            overflow-wrap: break-word;
+            padding-right: 20px;
+            white-space: pre-line;
+        }
+
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .options li {
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #fff;
+        }
+
+        .options li.selected {
+            background-color: #e0e7ff;
+            border-color: #4f46e5;
+        }
+
+        .options li.correct {
+            background-color: #d4edda;
+            border-color: #28a745;
+        }
+
+        .options li.incorrect {
+            background-color: #f8d7da;
+            border-color: #dc3545;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button.reset {
+            background-color: #ff5722;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Quiz App</h1>
+    <div id="quiz-container"></div>
+
+    <script>
+        const questions = {{ questions | tojson }};
+
+        const container = document.getElementById('quiz-container');
+
+        function renderQuiz() {
+            questions.forEach((q, index) => {
+                const questionDiv = document.createElement('div');
+                questionDiv.classList.add('question');
+
+                const questionText = document.createElement('h3');
+                questionText.textContent = `Q${index + 1}: ${q.question}`;
+                questionDiv.appendChild(questionText);
+
+                const optionsList = document.createElement('ul');
+                optionsList.classList.add('options');
+
+                q.options.forEach((option, index) => {
+                    const optionItem = document.createElement('li');
+                    optionItem.id=index+1;
+                    optionItem.textContent = option;
+                    optionItem.onclick = () => toggleSelection(optionItem);
+                    optionsList.appendChild(optionItem);
+                });
+
+                questionDiv.appendChild(optionsList);
+
+                const submitButton = document.createElement('button');
+                submitButton.textContent = "Submit Answer";
+                submitButton.onclick = () => handleSubmit(index, optionsList, submitButton);
+                questionDiv.appendChild(submitButton);
+
+                container.appendChild(questionDiv);
+            });
+        }
+
+        function toggleSelection(optionItem) {
+            optionItem.classList.toggle('selected');
+        }
+
+        function handleSubmit(questionIndex, optionsList, button) {
+            const selectedOptions = Array.from(optionsList.children)
+                .filter(option => option.classList.contains('selected'))
+                .map(option => option.id);
+            
+            console.log(selectedOptions);
+
+            fetch('/check_answer', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    question_index: questionIndex,
+                    selected_options: selectedOptions
+                })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data)
+                    const options = optionsList.children;
+                    for (let item of options) {
+                        item.onclick = null; // Disable further clicks
+                        item.classList.remove('selected'); // Remove selection styling
+                        if (data.correct_answers.includes(item.id)) {
+                            item.classList.add('correct');
+                        } else if (selectedOptions.includes(item.id)) {
+                            item.classList.add('incorrect');
+                        }
+                    }
+
+                    // Change button to "Reset Attempt"
+                    button.textContent = "Reset Attempt";
+                    button.classList.add('reset');
+                    button.onclick = () => resetAttempt(questionIndex,optionsList, button);
+                });
+        }
+
+        function resetAttempt(questionIndex,optionsList, button) {
+            // Reset all options
+            const options = optionsList.children;
+            for (let item of options) {
+                item.onclick = () => toggleSelection(item); // Re-enable option clicks
+                item.classList.remove('correct', 'incorrect', 'selected'); // Clear classes
+            }
+
+            // Change button back to "Submit Answer"
+            button.textContent = "Submit Answer";
+            button.classList.remove('reset');
+            button.onclick = () => handleSubmit(questionIndex,optionsList, button); // Re-enable submission
+        }
+
+        renderQuiz();
+    </script>
+</body>
+
+</html>

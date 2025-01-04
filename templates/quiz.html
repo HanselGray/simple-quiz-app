@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .question > h3 {
+            overflow-wrap: break-word;
+            padding-right: 20px;
+            white-space: pre-line;
+        }
+
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .options li {
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #fff;
+        }
+
+        .options li.correct {
+            background-color: #d4edda;
+            border-color: #28a745;
+        }
+
+        .options li.incorrect {
+            background-color: #f8d7da;
+            border-color: #dc3545;
+        }
+
+        .options li.recheck {
+            background-color: #fff3cd;
+            border-color: #ffc107;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Quiz App</h1>
+    <div id="quiz-container"></div>
+
+    <script>
+        const questions = {{ questions | tojson }};
+
+        const container = document.getElementById('quiz-container');
+
+        function renderQuiz() {
+            questions.forEach((q, index) => {
+                const questionDiv = document.createElement('div');
+                questionDiv.classList.add('question');
+
+                const questionText = document.createElement('h3');
+                questionText.textContent = `Q${index + 1}: ${q.question}`;
+                questionDiv.appendChild(questionText);
+
+                const linebreak = document.createElement('br');
+
+                const optionsList = document.createElement('ul');
+                optionsList.classList.add('options');
+
+                q.options.forEach(option => {
+                    const optionItem = document.createElement('li');
+                    optionItem.textContent = option;
+                    optionItem.onclick = () => handleOptionClick(index, Array.from(option)[0], optionItem);
+                    optionsList.appendChild(optionItem);
+                });
+
+                questionDiv.appendChild(optionsList);
+                container.appendChild(questionDiv);
+            });
+        }
+
+        function handleOptionClick(questionIndex, selectedOption, optionElement) {
+            fetch('/check_answer', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    question_index: questionIndex,
+                    selected_option: selectedOption
+                })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    const options = optionElement.parentElement.children;
+                    for (let item of options) {
+                        item.onclick = null; // Disable further clicks
+                    }
+                    if (data.has_votes) {
+                        optionElement.classList.add('recheck');
+                    }
+                    else if (data.is_correct) {
+                        optionElement.classList.add('correct');
+                    }
+                    else {
+                        optionElement.classList.add('incorrect');
+                        Array.from(options).find(item => item.textContent[0] === data.correct_answer).classList.add('correct');
+                    }
+                });
+        }
+
+        renderQuiz();
+    </script>
+</body>
+
+</html>

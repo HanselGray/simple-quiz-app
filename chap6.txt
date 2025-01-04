@@ -1,0 +1,75 @@
+1. What term describes a cryptographic technique used to embed information within something else to hide it from the casual observer? * 
+rootkit
+key escrow
+steganography
+offset
+Correct Answer: 3
+
+2. Which of the following is considered an anti-forensics technique? (Choose all that apply)  
+Data deduplication
+Steganography
+Encryption
+Password protection
+Correct Answer: 2,3,4
+
+3. During a confession, an accused criminal admitted to encrypting child pornography images and hiding them within other images. What technique did the accused employ? * 
+Typography
+Steganalysis
+Picture encoding
+Steganography
+Correct Answer: 4
+
+4. Which of the following commands allows you to hide a secret_file within an image_file? (Choose all that apply) * 
+steghide embed -ef <secret_file> -cf <image_file> -p <password>
+steghide extract -sf <image_file> -xf <secret_file> -p <password>
+jphide <image_file> <out_image_file> <secret_file>
+jpseek <secret_file> <image_file>
+Correct Answer: 1,3
+
+5. Which tool(s) allow you to retrieve the password used by Steghide to hide files in images? (Choose all that apply) * 
+stegdetect
+stegcracker
+stegseek
+jpdetect
+jpseek
+steghide
+Correct Answer: 2,3
+
+6. Which of the following tools allows you to hide files in MP3 files? * 
+jphide
+steghide
+audiostego
+mp3stego
+openstego
+Correct Answer: 3,4
+
+7. In task 4, when using 3 bits in the TTL field of the IP header to hide data, how many 
+different TTL values can the decoding server receive? * 
+2
+4
+8
+32
+Correct Answer: 3
+
+8. Which filter in Wireshark allows for filtering ICMP Echo Reply packets? (Choose all that apply) * 
+icmp.type == 8
+icmp.type == 0
+icmp.code == 0
+icmp.code == 8
+icmp.type == "8"
+icmp.type == "0"
+Correct Answer: 2
+
+12. Which of the following extensions indicate an graphic file? (Choose all that apply) * 
+.jpg
+.png
+.mp3
+.bmp
+.gif
+Correct Answer: 1,2,4,5
+
+13. In which of the following cases is the use of steganography considered a crime? * 
+Embedding File Ownership Marking Data
+Embedding Stolen Sensitive Data in Files
+Embedding Malicious Executables in Files
+Correct Answer: 2,3
