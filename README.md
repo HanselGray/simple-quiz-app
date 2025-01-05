@@ -7,7 +7,7 @@ or
 - Then, simply type: `python app.py` or `python3 app.py` (Linux)
 
 > [!NOTE]
-> To enter a quiz. Type in path: /chap/{chap_num} with chap_num from 1 to 7
+> To enter a quiz. Type in path: /chap/{chap_num} with chap_num from 1 to 9
 
 ## TABLE OF CONTENTS OF QUIZZES INCLUDED IN THIS APP
 
