@@ -29,7 +29,7 @@ def load_questions(file_path):
             if re.match(r'Correct Answer',line):
 
                 question['options']=options
-                question['answer']=[item for item in line.split(":", 1)[-1].strip().split(',')]
+                question['answer']=random.shuffle([item for item in line.split(":", 1)[-1].strip().split(',')])
                 
                 # for field in question:
                 #     print(f'Field name {field}: {question[field]}')
