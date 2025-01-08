@@ -57,11 +57,11 @@ def index():
     random.shuffle(questions)
     return render_template('test_new_quiz.html', questions=questions)
 
-@app.route('/chap/<int:chap_num>')
-def render_chapter_question(chap_num):
-    print(f'chap{chap_num}.txt')
+@app.route('/<string:subject>/chap/<int:chap_num>')
+def render_chapter_question(subject,chap_num):
+    print(f'./{subject}/chap{chap_num}.txt')
     global questions
-    questions=load_questions(f'chap{chap_num}.txt')
+    questions=load_questions(f'./{subject}/chap{chap_num}.txt')
     random.shuffle(questions)
     for question in questions:
         print(f'{question['question']}\nAnswer:{question['answer']}')
