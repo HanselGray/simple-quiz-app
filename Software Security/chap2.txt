@@ -1,0 +1,805 @@
+Q1.  What is the primary goal of software security?
+a)  To make software run faster
+b)  To protect software and data from unauthorized access and attacks
+c)  To make software easier to use
+d)  To reduce the cost of software development
+
+Correct Answer: 2
+
+Q2.  Which of the following is NOT a key aspect of secure software development?
+a)  Secure coding practices
+b)  Security by design
+c)  Ignoring security requirements
+d)  Static analysis
+
+Correct Answer: 3
+
+Q3.  What does "secure by design" mean?
+a)  Adding security features after the software is built
+b)  Integrating security into the software from the initial design phase
+c)  Relying solely on testing to find security flaws
+d)  Using complex algorithms to hide vulnerabilities
+
+Correct Answer: 2
+
+Q4.  What is a software vulnerability?
+a)  A software feature that makes it easier to use
+b)  A software weakness that can be exploited by an attacker
+c)  A bug that does not affect the software's security
+d)  A required update for software
+
+Correct Answer: 2
+
+Q5.  Which of the following is NOT a component of a vulnerability?
+a)  System is susceptible to a flaw
+b)  Adversary has access to the flaw
+c)  Adversary has the capability to exploit the flaw
+d)  Software is designed to be secure
+
+Correct Answer: 4
+
+Q6.  Why is software security important for developers?
+a)  To make software more expensive
+b)  To design and build secure systems
+c)  To create more complicated user interfaces
+d)  To increase development time
+
+Correct Answer: 2
+
+Q7.  What is the role of a researcher in software security?
+a)  To use software as quickly as possible
+b)  To ignore software security flaws
+c)  To identify flaws and propose mitigation strategies
+d)  To focus only on new software
+
+Correct Answer: 3
+
+Q8.  What are the potential consequences of software vulnerabilities?
+a)  Code execution, information leaks, privilege escalation
+b)  Faster software performance
+c)  Improved user experience
+d)  Reduced software complexity
+
+Correct Answer: 1
+
+Q9.  Which language is described as "unsafe" in the source material?
+a)  Java
+b)  Python
+c)  C and C++
+d)  JavaScript
+
+Correct Answer: 3
+
+Q10. What is a root cause of many security vulnerabilities in C and C++?
+a)  Type safety
+b)  Memory unsafety
+c)  Strong typing
+d)  Automatic garbage collection
+
+Correct Answer: 2
+
+Q11. What does "out-of-bounds (OOB)" mean in the context of memory access?
+a)  Accessing memory in a safe and authorized manner
+b)  Accessing memory outside the allocated buffer
+c)  Writing data to a file
+d)  Reading data from a network
+
+Correct Answer: 2
+
+Q12. What is a "use-after-free (UAF)" vulnerability?
+a)  Using memory after it has been initialized
+b)  Using memory after it has been deallocated
+c)  Allocating memory without using it
+d)  Freeing memory before using it
+
+Correct Answer: 2
+
+Q13. What is an integer overflow?
+a)  A mathematical operation that produces a correct result
+b)  A condition where the result of an arithmetic operation exceeds the maximum value
+c)  A type conversion that does not produce any errors
+d)  A way to make an application run faster
+
+Correct Answer: 2
+
+Q14. What is type confusion?
+a) A state of being unaware of which data type you are using.
+b) Using an object of one type as if it is of another type.
+c) A state where there are multiple possible data types for an object.
+d) The correct way to use static_cast.
+
+Correct Answer: 2
+
+Q15. Which of the following is an example of a temporal memory safety violation?
+a)  Writing data to the wrong memory location
+b)  Using memory after it has been freed
+c)  Using the incorrect data type for an operation
+d)  Writing data outside of the buffer
+
+Correct Answer: 2
+
+Q16. How can the use of `gets()` function lead to a buffer overflow?
+a) Because it does proper bounds checking
+b) Because it reads user input until a newline or EOF, potentially overflowing the buffer
+c) Because it is a secure way to receive user input
+d) Because the `gets` function no longer exists in most libraries
+
+Correct Answer: 2
+
+Q17. What is the problem with the `strcpy()` function?
+a) It is a safe and secure function.
+b) It automatically makes a copy of the string.
+c) It assumes the destination buffer is large enough and the source string is null-terminated, causing potential buffer overflows
+d)  It checks for buffer overflows.
+
+Correct Answer: 3
+
+Q18. What is the correct use of `strncpy()` to prevent buffer overflows?
+a) `strncpy(dest, src, strlen(src))`
+b)  `strncpy(dest, src, sizeof(dest))`
+c)  `strncpy(dest, src, sizeof(dest)-1); dest[sizeof(dest)-1] = '\0'`
+d)  `strncpy(dest, src, sizeof(dest) -1)` followed by explicitly adding a null terminator `dest[sizeof(dest)-1] = '\0'`
+
+Correct Answer: 4
+
+Q19. Why should you avoid writing your own escape functions?
+a) They are easy to get right.
+b) There's a high potential for errors.
+c) They always work better than built in functions.
+d) It's always best to reinvent the wheel.
+
+Correct Answer: 2
+
+Q20. What is the main issue with using `printf(string)` where string is user-supplied?
+a) It is a safe and secure way to print a string.
+b) It will always print the string as intended.
+c) It is vulnerable to format string attacks because of special characters such as %s, %x, %n.
+d) It automatically sanitizes user inputs.
+
+
+Correct Answer: 3
+
+Q21. What does "code is data is code" mean in the context of reverse engineering?
+a)  Code and data are always distinct
+b)  Code is never interpreted as data
+c)  Code can be represented and manipulated as data, and vice versa
+d)  Data cannot be interpreted as code
+
+Correct Answer: 3
+
+Q22. What is the hexadecimal representation of the binary number 0011'1000?
+a)  0x28
+b)  0x48
+c)  0x38
+d)  0x58
+
+Correct Answer: 3
+
+Q23. What is the main purpose of assembly language instructions like `mov`, `addl`, and `subl`?
+a) To make the code more difficult to read
+b)  To perform high-level operations
+c)  To manipulate data at the processor level
+d)  To speed up code
+
+Correct Answer: 3
+
+Q24. What is endianness?
+a) The way in which code is written
+b) The format of ASCII characters.
+c) The way in which numbers are stored in a database.
+d) The order in which bytes of data are stored in memory
+
+Correct Answer: 4
+
+Q25.  Which of the following is a conditional jump instruction?
+a)  movq
+b)  addl
+c)  jc
+d)  imul
+
+
+Correct Answer: 3
+
+Q26. What is the primary aim of software engineering?
+a) To create insecure applications.
+b) To create unmaintainable applications.
+c) To create a user interface that does not satisfy user needs.
+d) To create dependable, productive, usable, and maintainable software.
+
+Correct Answer: 4
+
+Q27. According to the sources, what is the main purpose of software engineering vs. security?
+a) Security is the most important concern and software engineering is a secondary concern
+b) Software engineering aims for security, while security is secondary.
+c) Software engineering focuses on dependability, productivity, usability, and maintainability, whereas security is often secondary and limited to testing.
+d) They have the same purpose.
+
+Correct Answer: 3
+
+Q28. Which of the following is not a goal of software engineering, according to the sources?
+a) Dependability
+b) Productivity
+c) Usability
+d)  Security
+
+Correct Answer: 4
+
+Q29. Why is low-level software considered complex?
+a)  Because it is very easy to work with
+b) Because it uses high-level languages
+c) Because low-level languages trade safety for performance
+d) Because all low level software is made up of 1-2 lines of code.
+
+Correct Answer: 3
+
+Q30. What is the approximate size of the Linux kernel in lines of code (MLoC)?
+a) 1 MLoC
+b)  2 MLoC
+c)  9 MLoC
+d) 17 MLoC
+
+
+Correct Answer: 4
+
+Q31. What is a code injection attack?
+a) A way to make code run faster
+b)  A way to secure code
+c) When untrusted data is sent to an interpreter as part of a command or query
+d) A safe way to execute code
+
+Correct Answer: 3
+
+Q32.  What is the main idea behind a Cross-Site Scripting (XSS) attack?
+a) To make the website run faster
+b) To improve the security of the website
+c)  To inject and execute JavaScript in the context of a web page
+d)  To improve user interface
+
+Correct Answer: 3
+
+Q33.  What is the meaning of OWASP?
+a)  Organization of Web Applications
+b)  Open Website Application Project
+c)  Open Web Application Security Project
+d)  Outdated Web Application Project
+
+Correct Answer: 3
+
+Q34. Which of the following is NOT in OWASP Top 10 (2017)?
+a) Code Injection
+b)  Broken Authentication
+c)  Type Confusion
+d)  Cross-Site Scripting (XSS)
+
+Correct Answer: 3
+
+Q35.  What is the primary difference between persistent XSS and reflected XSS?
+a) Persistent XSS is harder to exploit.
+b) Persistent XSS is stored on the server, while reflected XSS is immediate.
+c) Reflected XSS is stored on the server.
+d) They are the same.
+
+Correct Answer: 2
+
+Q36. What is a command injection vulnerability?
+a) A program that automatically fixes security vulnerabilities.
+b) A vulnerability that allows an attacker to execute arbitrary system commands.
+c) A program that helps the system run faster.
+d) The secure way of executing system calls.
+
+Correct Answer: 2
+
+Q37. What are some types of injection flaws?
+a) XSS
+b)  Code Reuse
+c)  Heap layout issues
+d) SQL, NoSQL, OS, and LDAP injection
+
+Correct Answer: 4
+
+Q38. What is the danger of information leaks in a long-running daemon process?
+a) They make the system more stable.
+b) They increase overall system security.
+c) They become more dangerous because of the long running process and probabilistic defenses.
+d) They make debugging easier.
+
+Correct Answer: 3
+
+Q39. Why is it a problem if a daemon crashes and restarts?
+a) Because it provides better security.
+b) Because it decreases the attack surface.
+c) Because it provides resilience and uptime which is traded against security.
+d) Because the crashing thread can be fixed.
+
+Correct Answer: 3
+
+Q40. What is the main difference between Sendmail and QMail?
+a) Sendmail is more secure and less complex.
+b) Qmail is more monolithic and complex.
+c) Sendmail uses a monolithic server approach, while Qmail uses a least-privilege approach with communicating processes.
+d) They are both the same.
+
+
+Correct Answer: 3
+
+Q41. What does it mean for a component to be trusted in a security context?
+a) It cannot be verified.
+b)  It is assumed to be correct according to a specification.
+c)  It can have vulnerabilities.
+d)  It does not require security checks.
+
+Correct Answer: 2
+
+Q42. What is formal verification used for?
+a) To increase the size of a component.
+b) To ensure a component correctly implements a specification.
+c)  To speed up the program by bypassing checks.
+d) To add more features to a component.
+
+Correct Answer: 2
+
+Q43. Which concept is related to memory safety in C/C++?
+a) Type safety
+b)  Ensuring that memory is accessed only within the bounds of allocated memory
+c) Automatic garbage collection
+d)  Static typing
+
+Correct Answer: 2
+
+Q44. What is the purpose of compiler-based instrumentation for memory safety?
+a)  To slow down the program.
+b)  To enforce spatial memory safety.
+c)  To add new features to the program.
+d)  To make the program more readable.
+
+Correct Answer: 2
+
+Q45. What does CETS instrument in memory management?
+a) Code duplication.
+b) Function calls.
+c) Memory allocation and deallocation.
+d) Variable naming.
+
+Correct Answer: 3
+
+Q46. What is the idea behind HexType for C++ type safety?
+a)  To use dynamic casts
+b)  To keep type metadata for allocated objects and check casts dynamically
+c)  To bypass all type checks
+d) To remove type metadata for allocated objects.
+
+Correct Answer: 2
+
+Q47. What is a key problem with `static_cast` in C++?
+a) It is the safest way to do typecasting.
+b) It has built in type safety checks.
+c) It is better than dynamic_cast.
+d) It can lead to type confusion if not used carefully.
+
+Correct Answer: 4
+
+Q48. Which of the following is a type of cast in C++ that should be used with caution?
+a) Safe cast
+b)  reinterpret_cast
+c) Implicit cast
+d) Compile time cast
+
+Correct Answer: 2
+
+Q49. Which of the following is a goal of HexType?
+a)  To remove all compile time checks
+b) To remove dynamic casts
+c)  To ignore all allocations.
+d)  To build a global type hierarchy during compilation.
+
+Correct Answer: 4
+
+Q50. What is the key goal of memory safety in C/C++?
+a)  To reduce program size.
+b) To reduce the amount of memory used by a program.
+c)  To ensure that memory is accessed correctly and securely.
+d) To reduce program speed.
+
+
+Correct Answer: 3
+
+Q51. What is the main difference between static and dynamic analysis?
+a) Dynamic analysis considers all possible inputs.
+b)  Static analysis considers all possible inputs, whereas dynamic analysis relies on sample test input.
+c) Static analysis is more expensive than dynamic analysis.
+d) Dynamic analysis is always more accurate.
+
+Correct Answer: 2
+
+Q52. What is a major benefit of static analysis?
+a) It uses sample test inputs.
+b) It can only find bugs, but cannot prove their absence.
+c)  It can find bugs and vulnerabilities without executing the code.
+d) It is always precise.
+
+Correct Answer: 3
+
+Q53.  What is a key limitation of dynamic analysis?
+a) It can consider all possible inputs.
+b) It needs to choose sample test inputs and cannot prove the absence of bugs.
+c) It can prove the absence of bugs.
+d) It doesn't require test input.
+
+Correct Answer: 2
+
+Q54. What is the goal of sound analysis?
+a) To report no errors.
+b)  To report all errors.
+c) To report no false alarms
+d) To report only a subset of errors
+
+Correct Answer: 2
+
+Q55. What does "complete analysis" mean in the context of static analysis results?
+a) To report no false alarms
+b)  To report all errors, possibly with false alarms.
+c) To report no errors.
+d) To report only some errors.
+
+Correct Answer: 2
+
+Q56. What is a false positive in the context of static analysis?
+a)  A bug that is correctly identified.
+b)  A warning reported by the analysis that is not actually an error.
+c) A warning that is not reported when there is an error
+d) A good thing that reduces the number of bugs
+
+Correct Answer: 2
+
+Q57.  What are the key stages of static analysis?
+a) Only data flow analysis
+b) Only control flow analysis
+c)  Only formal methods and verification.
+d) Control flow, data flow, call graph, path, information flow analysis, verification and formal methods.
+
+Correct Answer: 4
+
+Q58. What is a benefit of using static analysis for languages like C?
+a)  C is very strongly typed so static analysis is not needed.
+b)  Static analysis slows down C programs significantly.
+c)  C has weak typing, so static analysis helps detect errors that are not caught during compilation
+d) Static analysis makes C code more readable.
+
+Correct Answer: 3
+
+Q59. What is model checking?
+a) Manually testing a program.
+b)  Executing the program with sample inputs.
+c) Building a model of a program and exhaustively evaluating it against a specification.
+d) Comparing the program to another similar program.
+
+Correct Answer: 3
+
+Q60. What is the "state explosion problem" in model checking?
+a)  The model becoming too simple.
+b) The model becoming too easy to verify.
+c) The program running too quickly.
+d) The model's size often becomes exponentially large, making it difficult to verify
+
+Correct Answer: 4
+
+Q61. What are the two main types of temporal logic?
+a) First order and second order logic
+b)  Linear time and branching time logic
+c) Propositional and predicate logic
+d) Static and dynamic logic
+
+Correct Answer: 2
+
+Q62. What is CEGAR?
+a) A technique for dynamic analysis
+b) Counter Example-Guided Abstraction Refinement
+c) A technique for reverse engineering
+d) A technique for writing secure code
+
+Correct Answer: 2
+
+Q63.  What is a loop invariant?
+a) A variable that changes in a loop.
+b) A condition that is not valid in a loop.
+c) A condition that is true before and after each iteration of a loop.
+d) A way to stop a loop from running.
+
+Correct Answer: 3
+
+Q64.  What is the main purpose of annotations in ESC/Java?
+a)  To make the code harder to read
+b) To remove all code comments.
+c) To express design intent and improve code checking.
+d) To make the code execute faster.
+
+Correct Answer: 3
+
+Q65. What does SMT stand for?
+a) Static Machine Translation
+b) Secure Memory Transaction
+c)  Satisfiability Modulo Theory
+d)  Standard Method Testing
+
+Correct Answer: 3
+
+Q66. What are the inputs for an SMT solver?
+a)  A set of programming language instructions.
+b) A set of mathematical formulas.
+c)  A first-order formula over a background theory.
+d) A set of random numbers
+
+Correct Answer: 3
+
+Q67. What does a model checker check?
+a)  If code will crash when run.
+b)  If code uses memory properly.
+c) If a system, interpreted as an automaton, is a model of a property.
+d) If code is easy to read.
+
+Correct Answer: 3
+
+Q68. What is the goal of symbolic execution?
+a) To test code using concrete inputs
+b) To execute the program with symbolic valued inputs to achieve good path coverage
+c) To speed up the execution of code.
+d)  To obfuscate code to make it unreadable.
+
+Correct Answer: 2
+
+Q69. What does path constraint represent?
+a)  A way to slow down code execution
+b) A way to make code more complex.
+c)  A way to add more branches to code.
+d) An equivalence class of inputs
+
+Correct Answer: 4
+
+Q70. What is the goal of using an SMT solver with symbolic execution?
+a) To make the code harder to execute.
+b) To determine whether a path is feasible by checking if a path condition is satisfiable.
+c) To generate more complex paths
+d) To make code more complex.
+
+
+Correct Answer: 2
+
+Q71. What is fuzzing?
+a)  A technique that makes software secure
+b) A technique that makes software run faster
+c)  A technique for testing software by providing invalid, unexpected or random inputs
+d) A technique that tests programs by using only good inputs.
+
+Correct Answer: 3
+
+Q72. What is a main advantage of fuzzing?
+a) Fuzzing guarantees all bugs will be found
+b)  Fuzzing requires a lot of manual effort
+c) It requires very little effort, test cases are automatically generated and the test oracle is trivial.
+d) Fuzzing always finds the root cause of bugs.
+
+Correct Answer: 3
+
+Q73. What is a test oracle in the context of fuzzing?
+a) The person who runs the tests.
+b) The initial input used for the test
+c)  The way of making new test cases.
+d) The mechanism that determines whether the test results are acceptable or not.
+
+Correct Answer: 4
+
+Q74. Which of the following is NOT a type of fuzzing?
+a) Basic fuzzing with random inputs.
+b)  Mutation based fuzzing
+c)  Generation based fuzzing
+d) Formal verification fuzzing.
+
+Correct Answer: 4
+
+Q75. What does AFL stand for in the context of fuzzing?
+a)  Automated Fuzzing Logic
+b)  American Fuzzy Lop
+c)  Advanced Fuzzing Language
+d)  Automatic Fault Locator
+
+Correct Answer: 2
+
+Q76. What is "grey-box" fuzzing?
+a)  Fuzzing with access to the source code.
+b)  Fuzzing with no access to source code.
+c)  Fuzzing using code coverage to guide mutation.
+d)  Fuzzing that is performed only once.
+
+Correct Answer: 3
+
+Q77. What is the role of code coverage in AFL?
+a)  To slow down the fuzzing process
+b) To make test cases harder to generate
+c) To guide input mutation, prioritizing input mutations that increase code coverage.
+d) To make sure tests do not crash
+
+Correct Answer: 3
+
+Q78.  What is the "path explosion" problem in symbolic execution?
+a) Too few paths being analyzed
+b)  The number of possible paths through the code becomes extremely large due to conditional branches.
+c) The code runs too fast and symbolic execution cannot keep up.
+d) The code cannot be symbolically executed because the path is too short.
+
+Correct Answer: 2
+
+Q79. What is Concolic testing?
+a)  Testing with only concrete inputs
+b) Testing with only symbolic inputs.
+c) Combining concrete execution with symbolic execution.
+d)  Not a testing method at all.
+
+Correct Answer: 3
+
+Q80. What is Whitebox Fuzzing?
+a)  Fuzzing with only random inputs
+b) Fuzzing with only concrete inputs.
+c)  Combining fuzz testing with dynamic test generation
+d)  Fuzzing with only manually written test cases.
+
+Correct Answer: 3
+
+Q81. What is a common cause of memory corruption vulnerabilities?
+a)  Using high-level languages.
+b)  Using static typing.
+c)  Memory unsafety issues in C/C++.
+d) Using managed languages.
+
+Correct Answer: 3
+
+Q82. What can a "format string attack" be used for?
+a) To improve code readability.
+b)  To make code run faster.
+c)  To generate random numbers.
+d)  To read from and write to arbitrary memory locations.
+
+Correct Answer: 4
+
+Q83. Why are functions like `gets` and `strcpy` considered dangerous?
+a) They are very fast and efficient
+b) They do not require too much memory.
+c) They do not do bounds checking and can cause buffer overflows
+d) They are used by all programmers
+
+Correct Answer: 3
+
+Q84. Why does `strlen(input)` have the potential to cause problems?
+a) Because it is a fast function.
+b) Because it is efficient and secure.
+c) If input is null or not null-terminated, strlen will have undefined behavior.
+d)  It will always return the length of the input
+
+Correct Answer: 3
+
+Q85. What is the problem with the following code? `if (len < MAX_BUF) strcpy(buf,input);`
+a)  It correctly protects against buffer overflows.
+b) It is a perfectly safe piece of code.
+c) The integer overflow in `len = strlen(input)` could lead to a buffer overflow.
+d) `strlen` is a safe function.
+
+Correct Answer: 3
+
+Q86. What can integer overflow cause in C/C++?
+a)  It will always produce a positive number.
+b)  It will not cause any issues at all
+c)  It will always produce a negative number.
+d)  Undefined behavior that can lead to vulnerabilities.
+
+Correct Answer: 4
+
+Q87.  What is a major problem with using `read` with a negative length?
+a)  It will read the correct amount of data.
+b)  It will cause an error and exit the program.
+c)  The length parameter will be treated as an unsigned integer, leading to a large read.
+d) It is the correct way to read from a file.
+
+Correct Answer: 3
+
+Q88.  Why should you avoid using `malloc` without checking for null return?
+a) `malloc` will never fail.
+b)  `malloc` will automatically initialize the memory.
+c)  If `malloc` fails (out of memory), it returns null which can cause errors.
+d) `malloc` is a faster way to allocate memory
+
+Correct Answer: 3
+
+Q89. Why is it better to use `calloc` instead of `malloc`?
+a)  `calloc` is slower than `malloc`.
+b) `calloc` returns a pointer to memory that is not initialized.
+c)  `calloc` initializes allocated memory to zero.
+d) `calloc` always allocates less memory than requested
+
+Correct Answer: 3
+
+Q90. What is a key issue with `strncat`?
+a) The third parameter of strncat is the buffer size.
+b) The third parameter of strncat is the maximum string length to copy.
+c)  The third parameter is number of characters to copy, not the buffer size.
+d) It is a very secure function.
+
+
+Correct Answer: 3
+
+Q91.  What is the goal of Control-Flow Integrity (CFI)?
+a)  To make code run faster.
+b)  To change the code during execution.
+c) To restrict dynamic control flow to the control-flow graph of the application
+d) To remove the control flow from the application.
+
+Correct Answer: 3
+
+Q92. What is a key component of Control-Flow Integrity?
+a) Making the code harder to read.
+b) Making the program run slower.
+c)  Target set construction and dynamic enforcement.
+d) Removing all control flow from an application
+
+Correct Answer: 3
+
+Q93. What is the purpose of "Fortify Source" in GCC/glibc?
+a) To make all functions work perfectly.
+b)  To make sure all programs compile.
+c)  To replace all insecure function with secure ones.
+d) To distinguish between checkable and non-checkable code in order to provide more runtime checks.
+
+Correct Answer: 4
+
+Q94. What does ASLR stand for?
+a)  Advanced Software Language Runtime
+b)  Address Space Layout Randomization
+c)  Application System Loading Routine
+d) Automatic System Logging Repository.
+
+Correct Answer: 2
+
+Q95. What is the purpose of ASLR?
+a)  To make programs execute faster.
+b)  To make programs easier to reverse engineer.
+c) To randomize memory locations to make it harder for attackers to reliably predict addresses.
+d) To make memory leaks impossible.
+
+Correct Answer: 3
+
+Q96.  What are stack canaries?
+a)  A way to add features to the program.
+b) A way to make programs run faster
+c) Probabilistic protection against stack buffer overflows by placing a known value before a return address on the stack.
+d) A way to allocate more memory to a program
+
+Correct Answer: 3
+
+Q97.  Why is compartmentalization a good practice?
+a)  It makes the program run faster.
+b)  It adds more complexity to the program
+c)  It helps to reduce the attack surface.
+d)  It makes the program more vulnerable.
+
+Correct Answer: 3
+
+Q98. What is a key step in mitigating code injection attacks?
+a) Ignoring all user input.
+b)  Trusting all user input.
+c)  Escaping parameters to distinguish between code and data.
+d) Making code more complex.
+
+Correct Answer: 3
+
+Q99.  What is a key takeaway regarding input parsing?
+a) Input parsing is always safe.
+b) Input parsing is always trivial.
+c)  Input parsing needs to be handled securely to prevent injection attacks.
+d) Input parsing always adds more features.
+
+Correct Answer: 3
+
+Q100. What is a key step in ensuring secure software?
+a) Writing overly complex code.
+b)  Relying solely on dynamic analysis.
+c)  Separation of code and data.
+d)  Making code that is not maintainable.
+Correct Answer: 3

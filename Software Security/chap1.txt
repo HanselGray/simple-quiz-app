@@ -1,0 +1,600 @@
+Q1.  What is the primary focus of the Software Security course?
+a) Hardware design
+b) Secure coding practices and software dependability
+c) Network administration
+d) Database management
+Correct Answer: 2
+Q2.  What are some of the soft skills students will improve through this course?
+a)  Web development and graphic design
+b)  Teamwork and presentation skills
+c)  Database management and system administration
+d)  Game development and animation
+Correct Answer: 2
+Q3.  According to the sources, what is a software bug?
+a) A hardware malfunction
+b) An error, flaw, or fault in a computer program
+c) A network connectivity issue
+d) A user input error
+Correct Answer: 2
+Q4.  What is the definition of a software vulnerability?
+a)  A feature of the software
+b)  A software weakness that allows an attacker to exploit a bug
+c)  A way to improve software performance
+d)  A system's ability to detect bugs
+Correct Answer: 2
+Q5.  What are the three key components of a vulnerability?
+a)  System speed, user access, and programming language
+b)  System flaw, adversary access, and adversary capability
+c)  Hardware, software, and network
+d)  Testing, debugging, and deployment
+Correct Answer: 2
+Q6.  According to the sources, what are the root causes of many security issues in C and C++?
+a)  Garbage collection and automatic memory management
+b)  Read/write out-of-bounds, after-free, integer overflow, and type confusion
+c)  High-level abstraction and type safety
+d)  Static and dynamic analysis techniques
+Correct Answer: 2
+Q7.  What is the main trade-off when using low-level languages like C/C++?
+a)  Usability vs. maintainability
+b)  Type safety and memory safety vs. performance
+c)  Scalability vs. security
+d)  Productivity vs. cost
+Correct Answer: 2
+Q8.  What is the main aim of software engineering according to the sources?
+a) To make software as secure as possible
+b) To produce dependable, productive, usable, and maintainable software
+c) To make software that runs fast
+d) To make software that has the smallest code size
+Correct Answer: 2
+Q9. According to the sources, what does software engineering combine?
+a) Only aspects of programming languages
+b) Only aspects of networking
+c) Only aspects of project management and economics
+d) Aspects of programming languages, networking, project management, and economics
+Correct Answer: 4
+Q10. According to the sources, what is often limited to testing in software engineering?
+a)  Usability
+b)  Maintainability
+c)  Security
+d)  Productivity
+Correct Answer: 3
+Q11. What is a spatial memory safety violation?
+a) Accessing memory that has been deallocated
+b) Accessing memory that is outside the bounds of allocated memory
+c)  A type of error that occurs during software compilation
+d) A type of error that is a logic error
+Correct Answer: 2
+Q12.  What is a temporal memory safety violation?
+a) Accessing memory before it has been allocated
+b) Accessing memory that has been deallocated
+c) An incorrect calculation by the CPU
+d) An infinite loop in the program
+Correct Answer: 2
+Q13. What is type confusion?
+a) A type of memory safety violation
+b) A type of error that occurs when a program uses variables in the wrong way
+c) A compiler error
+d) A type of error that occurs when a program has too many variables
+Correct Answer: 2
+Q14.  What does OWASP stand for?
+a) Open Web Application Software Project
+b)  Open Web Application Security Project
+c)  Online Web Application Security Process
+d)  Open Website Application Security Program
+Correct Answer: 2
+Q15. What is the goal of the OWASP Top 10 list?
+a)  To list the most secure web applications
+b)  To collect information about vulnerabilities and attack vectors
+c)  To list the best web development practices
+d)  To list the most popular websites
+Correct Answer: 2
+Q16. How can command injection attacks occur in web-based systems?
+a) By direct access to the database
+b) By using a system command with user-controlled input
+c) By using a compromised web server
+d) By using a known exploit in the operating system
+Correct Answer: 2
+Q17.  What is the problem with the following code: `<? echo system("cat ".$_GET['file']); ?>`?
+a) It displays a file
+b) It is a secure way to handle user inputs
+c) There is no separation of code and data, leading to command injection
+d) It is only vulnerable to a SQL injection attack
+Correct Answer: 3
+Q18. Why should you avoid writing your own escape functions for command injection?
+a) They are too slow
+b) There is a high potential for error
+c) They are not needed
+d) They are not secure
+Correct Answer: 2
+Q19. What is one way to mitigate command injection vulnerabilities?
+a) Using the system command
+b) Using user input directly
+c) Reducing privileges and using simpler APIs
+d) Ignoring all user inputs
+Correct Answer: 3
+Q20. What enables injection attacks in general?
+a) Secure coding practices
+b) Separation of code and data
+c) Sharing the same channel for code and data
+d) Using a modern web framework
+Correct Answer: 3
+Q21. What is SQL injection?
+a)  Injecting code in the web application
+b)  Injecting malicious SQL queries to a database
+c)  Injecting a virus to the database
+d)  Injecting an email address
+Correct Answer: 2
+Q22. What is Cross-Site Scripting (XSS)?
+a) A form of malware that attacks websites
+b) Injecting and executing JavaScript in the context of a web page
+c) A method for gaining unauthorized access to a database
+d) A way to improve web site performance
+Correct Answer: 2
+Q23. What are the three types of XSS?
+a) Stored, retrieved, and client-side
+b) Persistent/stored, reflected, and client-side
+c)  Persistent, server-side, and client-side
+d)  Reflected, server-side, and stored
+Correct Answer: 2
+Q24. What is persistent XSS?
+a)  The attack data is stored on the client
+b)  The attack data is stored on the server
+c)  The attack data is sent through email
+d)  The attack data is not stored anywhere
+Correct Answer: 2
+Q25. What is reflected XSS?
+a)  The attack data is stored on the server
+b) The attack data is sent through a link and then returned as part of the results
+c) The attack data is hidden within a cookie
+d) The attack data is stored only on the client-side
+Correct Answer: 2
+Q26. What is client-side XSS?
+a)  The attack data is stored on the client
+b)  The attack data is stored on the server
+c)  Vulnerabilities found in client side code
+d)  Attacks that happen through e-mail
+Correct Answer: 3
+Q27.  What is a key security goal for Android applications?
+a) Provide access to all system resources
+b) Isolate individual applications
+c) Allow applications to modify each other
+d) Reduce the number of users on the system
+Correct Answer: 2
+Q28. What is the Android security strategy with regards to apps?
+a) Apps are signed, and are vetted centrally in the market
+b) Apps are not signed or vetted
+c) Apps are vetted by the user
+d) Apps are vetted in a distributed fashion
+Correct Answer: 1
+Q29. In reverse engineering, what does "code is data is code is data" mean?
+a) Code is only machine code
+b) Code is only high-level code
+c) Code can be represented as data and vice versa
+d) Code cannot be represented as data
+Correct Answer: 3
+Q30. What is endianness?
+a)  A type of programming language
+b)  The order of bytes in multi-byte integers
+c)  The way to encode text characters
+d)  The order of memory addresses
+Correct Answer: 2
+Q31. Which of the following are little endian architectures?
+a) x86 and MIPS
+b) x86 and ARM
+c)  MIPS and RISC
+d)  ARM and RISC
+Correct Answer: 2
+Q32. What is the purpose of assembly mnemonics?
+a)  To encrypt data
+b)  To decode machine code into a readable format
+c) To optimize code performance
+d) To create secure passwords
+Correct Answer: 2
+Q33. What is the difference between AT&T and Intel assembly syntax?
+a) They use the same mnemonics, but have different instruction order
+b)  AT&T syntax uses "mov src, dst" and Intel uses "mov dst, src"
+c)  AT&T syntax is used in Windows, and Intel in Linux
+d)  Intel syntax is more portable
+Correct Answer: 2
+Q34. Where is data stored for fast, direct access?
+a)  Disk
+b)  Network
+c)  Registers
+d)  Memory
+Correct Answer: 3
+Q35. In x86 assembly, what does `movq -0x4(%rdi,%rdx,$0x4), %rbx` correspond to?
+a)  `rbx = rdi - rdx * 0x4 - 0x4`
+b)  `rbx = *(rdi + rdx * 0x4 - 0x4)`
+c) `rbx = *(rdi - rdx*0x4+0x4)`
+d) `rbx = rdi + rdx * 4`
+Correct Answer: 2
+Q36.  What does the `jmp` instruction do?
+a)  It adds two values
+b)  It compares two values
+c)  It performs an unconditional jump to a target
+d)  It updates the flag register
+Correct Answer: 3
+Q37.  What does the `call` instruction do?
+a)  It jumps to a target location
+b)  It performs a function call
+c)  It subtracts two values
+d)  It updates the flag register
+Correct Answer: 2
+Q38.  What does the `cmp` instruction do?
+a)  It performs an unconditional jump
+b)  It performs a function call
+c)  It updates the flag register but not the target register
+d)  It performs a bitwise AND operation
+Correct Answer: 3
+Q39.  What is the purpose of the Global Offset Table (GOT)?
+a)  It contains assembly code
+b)  It contains pointers to symbols in other shared objects
+c)  It contains code that transfers control to a symbol
+d)  It contains function prototypes
+Correct Answer: 2
+Q40. What is the purpose of the Procedure Linkage Table (PLT)?
+a) Contains pointers to symbols in other shared objects
+b) Contains the operating system's API
+c)  Contains code that transfers control through the GOT to a symbol
+d)  Contains the code that handles exceptions
+Correct Answer: 3
+Q41. What are the two interpretations of an ELF file?
+a)  Code and data
+b)  Sections and segments
+c)  Header and body
+d) Source and compiled
+Correct Answer: 2
+Q42. What is a segment in an ELF file?
+a)  A portion of assembly code
+b) A region containing permissions and mapped regions
+c)   A list of function prototypes
+d)  A list of all global variables
+Correct Answer: 2
+Q43.  What does the `as` command do?
+a) Compiles C/C++ code
+b)  Links object files together
+c)  Assembles assembly code
+d)  Runs a program
+Correct Answer: 3
+Q44. What does the `ld` command do?
+a)  Assembles code
+b)  Compiles code
+c) Links object files together
+d)  Runs a program
+Correct Answer: 3
+Q45. What is memory safety?
+a)  The ability to prevent system crashes
+b) Ensuring all memory accesses adhere to the semantics of the source language
+c)  A way to improve memory performance
+d)  A technique to encrypt memory
+Correct Answer: 2
+Q46. What is the relationship between pointers and capabilities in memory safety?
+a) Pointers are the only thing that can be manipulated in a program
+b) Pointers are capabilities that provide access to well-defined memory regions
+c) Pointers are not secure and should be avoided in C/C++
+d) Capabilities are another way to manage memory that does not involve pointers
+Correct Answer: 2
+Q47.  How does SoftBound enforce spatial memory safety?
+a) By using garbage collection
+b) By keeping information about all pointers in disjoint metadata, indexed by pointer location
+c)  By using type checking
+d)  By using code obfuscation
+Correct Answer: 2
+Q48.  How does CETS ensure temporal memory safety?
+a)  It checks if memory is accessed out-of-bounds
+b)  It checks if memory is deallocated correctly
+c) It assigns a unique version to a memory area and checks if the pointer and object versions match
+d) It uses garbage collection to track memory allocations
+Correct Answer: 3
+Q49.  What is type safety?
+a)  The ability of a system to avoid crashes
+b)  A property of programs where code only accesses memory locations it is authorized to access
+c)  A way to encrypt data
+d)  The ability to handle exceptions
+Correct Answer: 2
+Q50.  What is the difference between `static_cast` and `dynamic_cast` in C++?
+a)  They are the same
+b) `static_cast` does a compile-time cast, and `dynamic_cast` does a runtime cast
+c) `static_cast` only handles primitive types, while `dynamic_cast` handles classes
+d) `dynamic_cast` does a compile-time cast, and `static_cast` does a runtime cast
+Correct Answer: 2
+Q51. What does `static_cast<Greeter*>(b)` do in C++?
+Correct Answera)  Creates a new object of type Greeter
+Correct Answerb) Perform a type check at compile time
+c)  A dynamic cast from base class to subclass
+d) A static cast from base class to subclass
+Correct Answer: 4
+Q52.  What does the code example with class `Base`, `Greeter`, and `Exec` illustrate?
+a) Safe memory access
+b) Type safety
+c)  Type confusion and memory safety violation
+d) Dynamic casting
+Correct Answer: 3
+Q53. How does C++ type safety prevent code from "going wrong"?
+a) By using garbage collection to automatically deallocate objects when they are no longer used
+b) By keeping type metadata for allocated objects, and checking all casts dynamically
+c) By using pointer arithmetic to access objects directly in memory
+d) By using code obfuscation techniques
+Correct Answer: 2
+Q54.  What are some of the main types of software attacks?
+a)  Hardware, software, and network attacks
+b)  Code execution and information leak
+c)  Physical and logical attacks
+d)  Denial-of-service and distributed attacks
+Correct Answer: 2
+Q55.  What does code execution require?
+a)  Direct access to a database
+b)  Control over the control flow
+c)  Encrypted data
+d)  A fast network connection
+Correct Answer: 2
+Q56. How do attackers control the control flow?
+a) Overwriting a code pointer
+b) Using a debugger
+c) Using a static analysis tool
+d) Using a cryptographic key
+Correct Answer: 1
+Q57. What are some methods of code execution?
+a)  Code encryption and decryption
+b)  Code injection, code reuse, code corruption
+c)  Network access and database queries
+d) Direct access to memory
+Correct Answer: 2
+Q58.  What is code reuse?
+a)  Writing new code quickly
+b)  Using existing code in a program to execute new behavior
+c)  Compiling code in different formats
+d)  Copying and pasting code
+Correct Answer: 2
+Q59. What does ROP stand for in the context of code reuse?
+a)  Read-Only Programming
+b)  Return-Oriented Programming
+c)  Remote Object Protocol
+d)  Resource Optimization Process
+Correct Answer: 2
+Q60.  What is a gadget in the context of ROP?
+a) A new function added to a program
+b)  An existing code snippet within a program used by an attacker
+c) A new class within the object oriented program
+d)  A static analysis tool
+Correct Answer: 2
+Q61. According to the sources, what is the relationship between sound and complete analysis?
+a) They both produce no false alarms
+b) A sound analysis reports all errors, but may report false alarms and a complete analysis may not report all errors but reports no false alarms
+c) They both may report all errors
+d) They are the same thing
+Correct Answer: 2
+Q62.  What is the goal of control flow analysis?
+a) To analyze data flow
+b) To understand how control moves through a program
+c) To check the type of each variable
+d) To verify formal specifications
+Correct Answer: 2
+Q63. What is dataflow analysis?
+a) The analysis of data flow through a program
+b)  The analysis of the control flow of the program
+c)  The analysis of user data
+d) The analysis of formal specifications
+Correct Answer: 1
+Q64. What is a call graph?
+a) Graph of data flowing through the program
+b) Graph of function calls in a program
+c)  Graph of user interactions
+d)  Graph of paths through the program
+Correct Answer: 2
+Q65. What is path analysis?
+a)  The analysis of data flow through a program
+b) The analysis of the control flow of a program
+c)  The analysis of user data
+d)  The analysis of paths through a program
+Correct Answer: 4
+Q66.  What does information flow analysis focus on?
+a) How data is organized
+b)  How information flows through a system
+c) The order that statements in a program are executed
+d) How system resources are allocated
+Correct Answer: 2
+Q67. What is Rice's Theorem?
+a) A type of memory safety rule
+b)  It states that any non-trivial property of a program is undecidable
+c) A law that defines the limits of static analysis
+d) A theorem about control flow analysis
+Correct Answer: 2
+Q68. What is a temporal logic?
+a) Expressing the order of events in time
+b) An alternative to first order logic
+c)  A logic system designed for analysis of space
+d) A system for expressing program invariants
+Correct Answer: 1
+Q69. What is model checking?
+a) Proving programs correct manually
+b) A technique to ensure memory safety
+c)  A way of verifying if a system model satisfies a given specification
+d) A way to generate software test cases
+Correct Answer: 3
+Q70.  What does CEGAR stand for?
+a) Counter Example Guided Abstraction and Refinement
+b)  Code Execution Guided Automatic Repair
+c)  Control Execution Generation and Retrieval
+d) Common Error Generation and Analysis Results
+Correct Answer: 1
+Q71. How does Microsoft SLAM use CEGAR?
+a) Refines over approximations to minimize false positives
+b) Generates new code automatically
+c) Uses dynamic analysis to catch errors
+d) Relies on the user to identify errors
+Correct Answer: 1
+Q72.  What is a loop invariant?
+a) A variable that changes every time the loop iterates
+b)  A condition that is true before and after each iteration of a loop
+c)  The number of iterations of a loop
+d)  A function to execute after a loop finishes
+Correct Answer: 2
+Q73. What are the basic units of propositional logic?
+a) Variables and functions
+b) Atoms, or symbols that denote propositions
+c)  Arrays and pointers
+d) Loops and if statements
+Correct Answer: 2
+Q74. What is an SMT instance?
+a) A type of network protocol
+b) A generalization of a Boolean SAT instance with predicates
+c) A method of type checking
+d) A type of dynamic analysis
+Correct Answer: 2
+Q75.  What is the output of an SMT solver?
+a) The code that was verified
+b) Whether a formula is satisfiable or not
+c)  The error messages
+d) A security vulnerability report
+Correct Answer: 2
+Q76.  What is symbolic execution?
+a) Executing a program normally
+b) Executing a program with symbolic inputs to represent a class of inputs
+c)  A method to test code dynamically
+d)  A method to verify code manually
+Correct Answer: 2
+Q77. What does symbolic execution generate?
+a)  New programs
+b)  Paths through a program
+c)  Equivalence class of inputs
+d)  Random code
+Correct Answer: 3
+Q78.  What is the difference between software verification and validation?
+a)  They are the same process
+b) Verification is about checking that the software does what it is supposed to, and validation is checking if the software meets customer needs
+c) Verification ensures performance, and validation ensures security
+d)  Verification is automated, and validation is manual
+Correct Answer: 2
+Q79. What is a key aspect of the software process?
+a) To provide the best user experience
+b) To develop quickly and cheaply
+c) To be easy to maintain and update
+d) Specification, design, validation, and evolution
+Correct Answer: 4
+Q80.  What is software specification?
+a)  Writing code
+b)  Establishing what services are required and the constraints of the system
+c)  Testing the software
+d)  Updating the software
+Correct Answer: 2
+Q81. According to the sources, what does static analysis involve?
+a) Running a program with test data
+b) Analyzing code without executing the program
+c)  Manually testing the program
+d)  Analyzing network data
+Correct Answer: 2
+Q82. What is program inspection?
+a)  Automatically generating tests
+b)  Examining source code to find errors
+c)  Running the program with test cases
+d)  Analyzing memory access patterns
+Correct Answer: 2
+Q83. What is the advantage of static analysis?
+a)  It can catch runtime errors
+b)  It can catch errors that are hard to find by testing, especially for C
+c) It can only be applied at compile time
+d) It can only analyze very small programs
+Correct Answer: 2
+Q84. What are the main reasons for memory corruption problems in C/C++?
+a) They are because of how memory works in a CPU
+b) They are related to manual memory management using functions such as `malloc` and `free`
+c) They are caused by operating system bugs
+d) They are caused by hardware defects
+Correct Answer: 2
+Q85.  What are some common memory corruption vulnerabilities listed in the sources?
+a) Cross-site scripting (XSS) and SQL injection
+b) Out-of-bounds write, use-after-free, out-of-bounds read, integer overflow
+c)  Path traversal and client-side request forgery
+d)  Missing authorization and improper authentication
+Correct Answer: 2
+Q86.  What percentage of high-severity and critical security bugs in the Chromium project are memory unsafety problems?
+a) 20%
+b) 50%
+c) 70%
+d) 90%
+Correct Answer: 3
+Q87. What is a key characteristic of the stack in memory layout?
+a) It grows upwards
+b) It stores only global variables
+c) It stores dynamically allocated memory
+d) It grows downwards by procedure calls
+Correct Answer: 4
+Q88. What is stored in activation records (stack frames)?
+a) Only global variables
+b) Function arguments, return addresses, and local variables
+c) Dynamically allocated memory
+d)  The operating system's kernel code
+Correct Answer: 2
+Q89. According to the sources, why should you never use the `gets` function?
+a) It's too slow
+b) It can cause buffer overflows
+c) It's too complicated to use
+d) It's a secure function
+Correct Answer: 2
+Q90. What is code injection?
+a) Injecting malicious code into a program that corrupts the data
+b)  Injecting malicious code into a program that changes the control flow
+c) Injecting malicious data that corrupts the database
+d) Injecting malicious code that corrupts the operating system
+Correct Answer: 2
+Q91. Why is the `strcpy` function unsafe?
+a) It encrypts strings
+b) It doesn't check if the destination buffer is large enough
+c) It's too complicated to use
+d) It's too slow
+Correct Answer: 2
+Q92. What is a safer alternative to `strcpy`?
+a)  `strcat`
+b) `strncpy` with proper handling of the size and null termination, or `strcpy_s`
+c) `sprintf`
+d)  `memcpy`
+Correct Answer: 2
+Q93. What is a format string vulnerability?
+a)  A vulnerability that occurs when a program uses a string as an address
+b)  A vulnerability that allows an attacker to read or write arbitrary memory locations using a format string in a function like `printf`
+c)  A way to format text in a secure manner
+d) A type of network vulnerability
+Correct Answer: 2
+Q94. What should you always use instead of  `printf(str)`?
+a)  `printf("%s", str)`
+b) `printf(str, "%s")`
+c) `sprintf(str)`
+d) `print(str)`
+Correct Answer: 1
+Q95. What is fuzzing?
+a)  A method for verifying code
+b)  A testing technique that uses automatically generated random or malformed inputs
+c)  A way to improve system performance
+d) A method to protect code from viruses
+Correct Answer: 2
+Q96. What are the three main types of fuzzing techniques mentioned in the sources?
+a) Mutation, random and generational
+b) Basic, dumb mutational, generational and code coverage guided
+c) Black box, white box, grey box
+d) Random, smart, and intelligent
+Correct Answer: 2
+Q97. What is mutation-based fuzzing?
+a)  Generating completely random inputs
+b) Applying random mutations to valid inputs
+c)  Using a grammar to generate inputs
+d) Using a model checker to generate inputs
+Correct Answer: 2
+Q98. What is generation-based fuzzing?
+a) Generating inputs completely at random
+b) Applying random mutations to valid inputs
+c) Using a grammar to generate inputs that are not completely random
+d) Using a model checker to generate inputs
+Correct Answer: 3
+Q99. What is a key feature of AFL?
+a) It uses random inputs only
+b) It uses a grammar to generate the inputs
+c) It observes code coverage and learns mutations based on that
+d) It uses static analysis
+Correct Answer: 3
+Q100. What does concolic testing combine?
+a) Two different types of static analysis
+b) Static and dynamic analysis
+c) Concrete and symbolic execution
+d) Testing that is manual and automated
+Correct Answer: 3
